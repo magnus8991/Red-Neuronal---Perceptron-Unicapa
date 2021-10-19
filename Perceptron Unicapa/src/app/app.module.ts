@@ -6,13 +6,13 @@ import { HeaderComponent } from './header/header.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { EntrenamientoComponent } from './RedMonocapa/Componentes/entrenamiento/entrenamiento.component';
-import { SimulacionComponent } from './RedMonocapa/Componentes/simulación/simulacion.component';
+import { EntrenamientoComponent } from './PerceptronUnicapa/Componentes/entrenamiento/entrenamiento.component';
+import { SimulacionComponent } from './PerceptronUnicapa/Componentes/simulación/simulacion.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { ParametrosEntrenamientoService } from './RedMonocapa/Servicios/parametrosEntrenamiento.service';
-import { SimulacionService } from './RedMonocapa/Servicios/simulacion.service';
+import { ParametrosEntrenamientoService } from './PerceptronUnicapa/Servicios/parametrosEntrenamiento.service';
+import { SimulacionService } from './PerceptronUnicapa/Servicios/simulacion.service';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -24,10 +24,10 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
-import { EntrenamientoService } from './RedMonocapa/Servicios/entrenamiento.service';
-import { StepEntradasComponent } from './RedMonocapa/Componentes/entrenamiento/secciones/step-entradas/step-entradas.component';
-import { StepPesosComponent } from './RedMonocapa/Componentes/entrenamiento/secciones/step-pesos/step-pesos.component';
-import { StepEntrenamientoComponent } from './RedMonocapa/Componentes/entrenamiento/secciones/step-entrenamiento/step-entrenamiento.component';
+import { EntrenamientoService } from './PerceptronUnicapa/Servicios/entrenamiento.service';
+import { StepEntradasComponent } from './PerceptronUnicapa/Componentes/entrenamiento/secciones/step-entradas/step-entradas.component';
+import { StepPesosYUmbralesComponent } from './PerceptronUnicapa/Componentes/entrenamiento/secciones/step-pesos-y-umbrales/step-pesos-y-umbrales.component';
+import { StepEntrenamientoComponent } from './PerceptronUnicapa/Componentes/entrenamiento/secciones/step-entrenamiento/step-entrenamiento.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { StepEntrenamientoComponent } from './RedMonocapa/Componentes/entrenamie
     EntrenamientoComponent,
     SimulacionComponent,
     StepEntradasComponent,
-    StepPesosComponent,
+    StepPesosYUmbralesComponent,
     StepEntrenamientoComponent
   ],
   imports: [

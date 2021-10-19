@@ -1,35 +1,59 @@
 <div class="cuerpo">
     <div class="container contenido" id="cuerpo">
 
-        <h1 id="TituloRedMonocapa">
-            <b>Redes Neuronales Monocapa</b>
+        <h1 id="TituloPerceptronUnicapa">
+            <b>Perceptron Unicapa</b>
         </h1>
 
-        <div id="TextoRedMonocapa">
-
+        <div id="TextoPerceptronUnicapa">
             <p>
-                Las redes monocapa son redes con una sola capa. Para unirse las neuronas crean conexiones laterales para
-                conectar con otras neuronas de su capa. Las redes más representativas son la red de Hopfield, la red
-                BRAIN-STATE-IN-A-BOX o memoria asociativa y las maquinas estocásticas de Botzmann y Cauchy.
-                Entre las redes neuronales monocapa, existen algunas que permiten que las neuronas tengan conexiones a
-                si
-                mismas y se denominan auto-recurrentes.
+                En 1958 el psicólogo Frank Ronsenblant desarrolló un modelo simple de neurona basado en el modelo de
+                McCulloch y Pitts y en una regla de aprendizaje basada en la corrección del error. A este modelo le
+                llamó Perceptrón. Además se caracterizó por su capacidad de aprender a reconocer patrones. El perceptrón
+                está constituido por conjunto de sensores de entrada que reciben los patrones de entrada a reconocer o
+                clasificar y una neurona de salida que se ocupa de clasificar a los patrones de entrada en dos clases,
+                según que la salida de la misma se 1 (activada) o 0 (desactivada).
             </p>
         </div>
 
         <br>
+
+        <h2 id="TituloAprendizaje">
+            <b>Características</b>
+        </h2>
+
+        <div id="TextoPerceptronUnicapa">
+            <p>
+                <li>Sistema capaz de realizar tareas de clasificación de forma automática.</li>
+                <li>A partir de un número de ejemplos etiquetados, el sistema determina la ecuación del plano
+                    discriminante.</li>
+                <li>Puede usarse como neurona dentro de otro tipo de red de neurona artificial.</li>
+                <li>Aprendizaje supervisado y conexiones en un sólo sentido.</li>
+                <li>Es reconocido por su capacidad de aprender a reconocer patrones</li>
+                <li>Es un modelo unidireccional compuesto por dos capas de neuronas.</li>
+                <li>Con respecto al entrenamiento las neuronas de entrada son discretas y la función de activación de
+                    las
+                    de salida es de tipo escalón.</li>
+            </p>
+        </div>
+
         <br>
 
         <h2 id="TituloAprendizaje">
-            <b>Aprendizaje Supervisado</b>
+            <b>Pasos a seguir para el entrenamiento de la red</b>
         </h2>
 
-        <div id="TextoRedMonocapa">
+        <div id="TextoPerceptronUnicapa">
             <p>
-                En este en modo aprendizaje se muestran los patrones a la red y la salida deseada para esos patrones y 
-                se usa una fórmula matemática de minimización del error que ajuste los pesos para dar la salida más cercana 
-                posible a la salida deseada.
+                Los pasos a seguir para el aprendizaje son:
             </p>
+            <li>Inicialización aleatoria de los pesos y umbral.</li>
+            <li>Se toma un patrón de entrada-salida.</li>
+            <li>Se calcula la salida de la red.</li>
+            <li>Si y = d(x) (clasificación correcta).
+                Si y ≠ d(x) (clasificación incorrecta) se modifican los parámetros.</li>
+            <li>Se vuelve al paso 2 hasta completar el conjunto de patrones de entrenamiento.</li>
+            <li>Se repiten los pasos anteriores hasta alcanzar el criterio de parada.</li>
         </div>
     </div>
 </div>
